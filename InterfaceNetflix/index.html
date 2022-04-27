@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+   
+    <!--responsive-->
+   <link rel="stylesheet" href="/style/responsive.css">
+    <!--owl css-->
+   <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
+   <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   
+   <title>NASCWIKI</title>
+</head>
+
+<body>
+    <header>
+    <div class="container">
+        <img class="logo" src="img/nascwiki.png" width=180px/>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">TEAMS</a>
+            <a href="#">DRIVERS</a>
+        </nav>
+    </div>
+   
+    </header>
+    <main>
+        <div class="main-driver">
+            <div class="container">
+                <img class="title" src="img/jeffgcsign.png" width=250px/>
+                <p class="bio">Jeffery Michael Gordon (born August 4, 1971) is an 
+                    American former professional stock car racing driver, 
+                    who is the Vice Chairman for Hendrick Motorsports. 
+                    He raced full-time from 1993 to 2015.</p>
+            <div class="bts">
+            <button onclick="showModal()" role="button" class="bt">
+                MORE
+                <i class="fa-duotone fa-plus"></i>
+            </button>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span onclick="hideModal()">&times;</span>
+                    <p>Gordon started his professional racing career in the Busch Series with Hugh Connerty Racing, followed by Bill Davis Racing, winning three races, and began racing full-time in the NASCAR Winston Cup Series for Hendrick Motorsports in 1993. He is a four-time Cup Series champion, having won the title in 1995, 1997, 1998, and 2001. He was the youngest driver to win a NASCAR title, being 24 years old by the end of the 1995 season. He also won the Daytona 500 three times in 1997, 1999, and 2005. Gordon has completed three career Grand Slams and has won a total of sixteen Crown Jewel races (three Daytona 500s, four Talladega 500s, three Coca-Cola 600s, and six Southern 500s), both of which are all-time records.</p>
+                </div>
+            </div>
+           
+        </div>
+        </div>
+        </div>
+    </main>
+    
+    <div class="carousel-drivers">
+        <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img class="box-driver" src="img/mini1.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+            <img class="box-driver" src="img/mini2.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+            <img class="box-driver" src="img/mini3.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+            <img class="box-driver" src="img/mini4.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+            <img class="box-driver" src="img/mini5.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+            <img class="box-driver" src="img/mini6.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+            <img class="box-driver" src="img/mini7.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+        <img class="box-driver" src="img/mini8.jpg" alt="" srcset="">
+    </div>
+    </div>
+
+    
+    <script src="https://kit.fontawesome.com/956b797c82.js" crossorigin="anonymous"></script>
+    <!--owl js-->
+    <script src="/js/owl/jquery.min.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script>
+        function showModal(){
+            var element = document.getElementById("modal");
+            element.classList.add("show-modal");
+        }
+        function hideModal(){
+            var element = document.getElementById("modal");
+            element.classList.remove("show-modal");
+        }
+    </script>
+</body>
+</html>

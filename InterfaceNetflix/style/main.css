@@ -1,0 +1,140 @@
+:root{
+    --red:#E50914;
+    --blk:#1a1a1a;
+    --ble:#0055ff;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*base*/
+body{
+    background: var(--blk);
+    font-family: 'Roboto', sans-serif;
+    color:whitesmoke
+
+}
+header .container{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color:#fff;
+}
+/*main driver*/
+.main-driver{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/jeffgc.jpg');
+    
+    height: 400px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-driver .bio{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.title{
+    margin-top: 5%;
+}
+
+.bt{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 10;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+.bt:hover{
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.bt i{
+    margin-left: 5px;
+}
+
+.modal{
+    position:fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.modal-content{
+    background-color: var(--blk);
+    padding: 16px 24px;
+    width: 384px;
+    border-radius: 0.5rem;
+}
+
+span{
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    background-color: rgb(142, 142, 142);
+    text-align: center;
+    line-height: 24px;
+}
+span:hover{
+    background-color: var(--red);
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.main-driver .container{
+    width: 60%;
+}
+
+.box-driver{
+    height: 20%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-drivers{
+    margin-top: 5px;
+}
